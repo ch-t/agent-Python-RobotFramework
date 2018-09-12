@@ -27,9 +27,12 @@ class RobotService(object):
         "INFO": "INFO",
         "FAIL": "ERROR",
         "TRACE": "TRACE",
-        "DEBUG": "DEBUG"
+        "DEBUG": "DEBUG",
+        "HTML": "INFO",
+        "WARN": "WARN",
+        "ERROR": "ERROR"
     }
-
+    
     @staticmethod
     def init_service(endpoint, project, uuid, log_batch_size):
         if RobotService.rp is None:
